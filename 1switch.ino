@@ -1,4 +1,4 @@
-// Define pin numbers
+
 const int switchPin = 2;     // Pin connected to the aluminum foil switch
 const int ledPin = 13;       // Pin connected to breadboard led
 
