@@ -70,8 +70,8 @@ void handleAccelerometer() {
 
   // Detect punch and send score only once
   if (magnitudeG > impactThreshold && !scoreSent) {
-    int punchValue = map(magnitudeG, impactThreshold, impactThreshold + 10, 0, 2300);
-    punchValue = constrain(punchValue, 0, 2300); // Constrain value to a maximum
+    int punchValue = map(magnitudeG, impactThreshold, impactThreshold + 10, 0, 2500);
+    punchValue = constrain(punchValue, 0, 2500); // Constrain value to a maximum
 
     if (punchValue > 0) { // Ignore 0 scores
       Serial.print("<,:");
